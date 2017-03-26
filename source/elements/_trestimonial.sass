@@ -1,0 +1,24 @@
+.testimonial_slider[data-style="minimal"] blockquote
+	text-align: left
+	+min-screen($mobile)
+		padding: 0 25px 0 70px
+		// position: relative
+		&:before
+			font-family: "svgfont"
+			content: $svg-icon-open-quote
+			position: absolute
+			font-size: 45px
+			color: $grey-nurse
+			left: 0
+			top: 13px
+	p
+		color: $regal-blue
+		padding-bottom: 10px
+	body & span
+		display: inline
+		font-size: 20px !important
+		color: $storm-grey
+		&.title
+			font-style: normal !important
+			&:before
+				content: ', '

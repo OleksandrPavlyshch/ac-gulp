@@ -1,0 +1,14 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+	<style>
+		.st0{
+			fill: #ffffff;
+		}
+	</style>
+<g>
+	<rect class="st0" x="2.3" y="7.3" width="3.3" height="10.7"/>
+	<ellipse class="st0" cx="3.9" cy="4" rx="2" ry="2"/>
+	<path class="st0" d="M10.9,12.4c0-1.5,0.7-2.4,2-2.4c1.2,0,1.8,0.9,1.8,2.4c0,1.5,0,5.6,0,5.6H18c0,0,0-3.9,0-6.8C18,8.4,16.4,7,14.1,7
+		c-2.3,0-3.2,1.8-3.2,1.8V7.3H7.7V18h3.2C10.9,18,10.9,14.1,10.9,12.4z"/>
+</g>
+</svg>

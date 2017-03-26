@@ -1,0 +1,43 @@
+//footer
+.footer_logo
+	max-width: 200px !important
+	margin-bottom: 30px
+	+ie
+		max-height: 50px
+#footer-widgets
+	.container .col
+		+max-screen($tablet)
+			margin: 0
+			width: 100%
+			float: none
+			text-align: center
+	.social_links
+		float: right
+		+max-screen($tablet)
+			float: none
+
+
+.social_links
+	// float: right
+	// overflow: hidden
+	&-item
+		display: inline-block
+		cursor: pointer
+		border-radius: 50%
+		color: #fff
+		padding: 3px
+		vertical-align: top
+		text-align: center
+		line-height: 1.1
+		font-size: 23px
+		+max-screen($tablet)
+			font-size: 34px
+			margin: 0 10px
+		&+&
+		&:hover
+			transition: opacity, transform .3s ease
+			opacity: .8
+			transform: scale(1.1)
+			
+.widget_the_social_links
+	float: right
