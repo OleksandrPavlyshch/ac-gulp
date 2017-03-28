@@ -1,0 +1,92 @@
+.font
+	&-black
+		font-weight: 900 !important
+	&-bold
+		font-weight: 700 !important
+	&-lite
+		font-weight: 100 !important
+	&-book
+		font-weight: 300 !important
+	&-normal
+		font-weight: 400 !important
+
+@keyframes portSliderLine
+	0%
+		transform: scaleX(0)
+		transform-origin: left
+
+	100%
+		transform: scaleX(1)
+		transform-origin: left
+
+
+@keyframes portSliderLine2
+	0%
+		transform: scaleX(1)
+		transform-origin: right
+
+	100%
+		transform: scaleX(0)
+		transform-origin: right
+
+.astound_button
+	display: inline-block
+	position: relative
+	top: -3px
+	letter-spacing: 0
+	font-size: 18px
+	font-weight: 500
+	color: $white
+	border-radius: 9px
+	background-color: $astound-navy
+	padding: 25px 42px
+	line-height: 20px
+	&:hover
+		opacity: 0.87
+		color: $white
+		span
+			transform: translateX(18px)
+		i
+			transform: translateX(-6px)
+			opacity: 1
+	span
+		left: 0px
+		display: inline-block
+		transform: translateX(0)
+		transition: opacity .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1)
+		position: relative
+	i
+		font-size: 18px
+		line-height: 18px
+		width: 18px
+		position: absolute
+		top: 50%
+		left: 30px
+		margin-top: -9px
+		opacity: 0
+		transition: all .45s cubic-bezier(0.25,1,0.33,1)
+
+.astound_link_needs
+	display: inline-block
+	position: relative
+	font-size: 42px
+	line-height: 1
+	color: $astound-navy
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 100%
+		margin-top: 5px
+		width: 0
+		width: 100%
+		height: 2px
+		background-color: $astound-blue
+		backface-visibility: hidden
+		+min-screen($tablet)
+			animation: portSliderLine2 0.42s cubic-bezier(0.42, 0, 0, 1) forwards
+	&:hover
+		color: $astound-navy
+		&:before
+			+min-screen($tablet)
+				animation: portSliderLine 0.42s cubic-bezier(0.42, 0, 0, 1) forwards
