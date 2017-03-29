@@ -1,0 +1,40 @@
+#header-outer header#top .row .col.span_9
+	width: 74.5% !important
+	ul.sf-menu
+		// display: inline-block
+		+justify
+		float: none
+		width: 83% !important
+		text-align: justify !important
+		// width: auto !important
+		>li
+			display: inline-block
+			float: none
+			vertical-align: top
+		a
+			font-size: 16px
+			padding-top: 7px !important
+	.lang-item 
+		// float: right
+		position: relative
+		a
+			color: $astound-light-gray !important
+			padding-top: 7px !important
+		&.current-lang
+			a
+				color: $astound-navy !important
+	.lang-item + .lang-item 
+		margin-left: 2px
+		a:before
+			content: ''
+			position: absolute
+			left: -8px
+			top: 6px
+			width: 0
+			height: 20px
+			border-right: 2px solid $astound-light-gray
+
+
+	.contact_us_header_link
+		a
+			color: $astound-blue !important

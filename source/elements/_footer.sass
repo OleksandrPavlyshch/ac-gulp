@@ -1,4 +1,51 @@
 //footer
+#footer-outer
+	.row
+		padding-top: 100px
+	.menu-footer-menu-container #menu-footer-menu
+		padding-bottom: 70px
+		+min-screen($mobile)
+			+justify
+			text-align: justify !important
+
+	.footer_menu
+		&-column
+			+min-screen($mobile)
+				display: inline-block
+				vertical-align: top
+				max-width: 15%
+				text-align: left !important
+			a
+				font-size: 16px
+				font-weight: 500
+				line-height: 1.2 !important
+				&:hover
+					text-decoration: underline
+			> a
+				display: none !important
+			ul
+				padding-left: 0 !important
+			> ul > li + li
+				+min-screen($mobile)
+					margin-top: 35px
+			> ul > .lang-item + .lang-item
+				margin-top: 0
+			> ul > li > a
+				color: $astound-navy !important
+				margin-bottom: 5px !important
+			> ul ul
+				+max-screen($mobile)
+					display: none !important
+
+	.footer_copy
+		font-size: 14px
+		font-weight: 400
+		+max-screen($mobile)
+			padding: 0 15px
+
+.ascend #footer-outer .widget.widget_nav_menu li
+	padding: 2px 0 !important
+
 .footer_logo
 	max-width: 200px !important
 	margin-bottom: 30px
@@ -11,10 +58,10 @@
 			width: 100%
 			float: none
 			text-align: center
-	.social_links
-		float: right
-		+max-screen($tablet)
-			float: none
+// .social_links
+// 	// float: right
+// 	+max-screen($tablet)
+// 		float: none
 
 
 .social_links
@@ -24,20 +71,22 @@
 		display: inline-block
 		cursor: pointer
 		border-radius: 50%
-		color: #fff
 		padding: 3px
 		vertical-align: top
 		text-align: center
 		line-height: 1.1
 		font-size: 23px
+		#footer-outer .row &
+			color: $astound-navy !important
 		+max-screen($tablet)
 			font-size: 34px
 			margin: 0 10px
-		&+&
-		&:hover
-			transition: opacity, transform .3s ease
-			opacity: .8
-			transform: scale(1.1)
+		// &+&
+		#footer-outer .row &:hover
+			transition: color .3s ease
+			// opacity: .8
+			color: $astound-dark-gray !important
+			// transform: scale(1.1)
 			
 .widget_the_social_links
 	float: right
