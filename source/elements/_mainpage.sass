@@ -71,7 +71,7 @@ span.wpcf7-list-item
 			font-size: 22vw
 
 .partners
-	+min-screen($mdpi)
+	+min-screen(1000)
 		.owl-carousel
 			margin-bottom: 0
 		.owl-controls
@@ -81,12 +81,20 @@ span.wpcf7-list-item
 	&-icon
 		color: $black
 		font-size: 110px
+		+max-screen($hdpi)
+			font-size: 95px
+		+max-screen($mdpi)
+			font-size: 84px
+		+max-screen($tablet)
+			font-size: 78px
 	&-technology_icon
 		font-size: 65px
 		color: $black
+		+max-screen($mdpi)
+			font-size: 60px
 	h5
 		font-size: 20px !important
-		letter-spacing: 2px
+		// letter-spacing: 2px
 
 .homepage_partners
 	&-icon
@@ -124,7 +132,7 @@ span.wpcf7-list-item
 		color: $keppel !important
 		h6
 			font-weight: 300
-			color: $keppel !important
+			// color: $keppel !important
 		+max-screen($mdpi)
 			padding: 0 5%
 
@@ -358,6 +366,11 @@ span.wpcf7-list-item
 	&-wrap
 		padding-top: 90px !important
 		padding-bottom: 105px !important
+		padding-left: 7%
+		padding-right: 7%
+		+max-screen($mdpi)
+			padding-left: 4%
+			padding-right: 4%
 		+max-screen($tablet)
 			padding: 0 !important
 	>.col.span_12
@@ -387,7 +400,7 @@ span.wpcf7-list-item
 		&-title
 			position: relative
 			display: inline-block
-			padding-bottom: 5px
+			padding: 0 0 5px !important
 			height: 81px
 			+max-screen($mdpi)
 				padding: 0 10px 5px
@@ -399,25 +412,26 @@ span.wpcf7-list-item
 				font-size: 70px
 				color: $astound-light-gray
 				transition: color 1s ease
-				+max-screen($mdpi)
+				+max-screen($hdpi)
 					font-size: 49px
 					color: $astound-light-gray !important
 			&:before
 				content: ""
 				position: absolute
 				bottom: 0
-				left: 0
+				left: 1%
 				width: 45px
 				padding-bottom: 3px
 				background-color: $astound-blue
 				transition: all 1s ease
 				+max-screen($tablet)
 					width: 100%
+					left: 0
 		&:hover &-title
 			h1
 				color: $astound-navy
 			&:before
-				width: 100%
+				width: 97%
 
 		&-popup
 			position: absolute
