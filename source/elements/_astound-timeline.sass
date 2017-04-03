@@ -1,0 +1,69 @@
+.astound_timeline
+	.wpostahs-slider-design-2
+		.slick-arrow
+			top: 50px !important
+			// +max-screen($mobile)
+			// 	display: none
+			+max-screen($tablet)
+				&.slick-next
+					right: -30px !important
+				&.slick-prev
+					left: -30px !important
+		.wpostahs-slider-nav
+			max-width: none
+			.slick-list.draggable
+				+min-screen($tablet)
+					overflow: visible
+				&:before
+					background-color: $astound-dark-gray
+					top: 38px
+					width: auto
+					left: 50px
+					right: 50px
+					+max-screen($mdpi)
+						left: 46px
+						right: 46px
+					+max-screen($tablet)
+						left: 40px
+						right: 40px
+				+min-screen($tablet)
+					&:after
+						content: ''
+						width: 300%
+						margin-left: -150%
+						background: #d8dde7;
+						position: absolute;
+						top: 38px;
+						left: 50%;
+						height: 0
+						z-index: -1
+						border-top: 2px dotted $astound-dark-gray
+			.wpostahs-slider-nav-title
+				color: $astound-dark-gray
+				font-weight: normal
+				font-size: 22px
+				line-height: 1
+				.wpostahs-main-title
+					top: 0
+					margin: 0 !important
+					padding-top: 10px !important
+					button
+						background-color: $astound-dark-gray
+						height: 14px
+						width: 14px
+						border: none
+				&:hover,
+				&.slick-current
+					color: $astound-blue
+					.wpostahs-main-title
+						button
+							background-color: $astound-blue
+		.wpostahs-centent-title
+			display: none
+		.wpostahs-slider-nav-title
+			padding-bottom: 0
+		.wpostahs-slider-for
+			padding: 70px 0 0
+		.wpostahs-centent
+			padding: 0
+// .wpostahs-slider-design-2 .wpostahs-slider-nav .slick-list.draggable::before
