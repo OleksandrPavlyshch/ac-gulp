@@ -12,6 +12,11 @@
 	&-tight *
 		letter-spacing: -1px !important
 
+.only_bg_column
+	+max-screen($mobile)
+		min-height: auto !important
+		padding-top: 100% !important
+
 @keyframes portSliderLine
 	0%
 		transform: scaleX(0)

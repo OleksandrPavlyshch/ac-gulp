@@ -2,21 +2,98 @@
 	transition: background-color .3s ease
 	.owl-item
 		float: left
-	.owl-loaded
+		padding: 0 3px
 		overflow: hidden
+		h1,
+		h2
+			font-size: 70px
+			line-height: 1
+			font-weight: 300
+			margin-bottom: 40px !important
+			+max-screen($tablet)
+				font-size: 60px
+			+max-screen($mobile)
+				font-size: 40px
+				line-height: 1.2
+		p
+			font-size: 38px
+			font-weight: normal
+			color: $white
+			line-height: 1.4
+			+max-screen($tablet)
+				font-size: 25px
+			+max-screen($mobile)
+				font-size: 18px
+	&-slides
+		padding: 0 20%
+		+max-screen($hdpi)
+			padding: 0 16%
+		+max-screen($tablet)
+			padding: 0 40px
+		+max-screen($mobile)
+			padding: 0 20px
 	&-nav
 		color: $white
+		padding-bottom: 65px
+		+max-screen($mobile)
+			padding-bottom: 20px
 		.wpb_wrapper
+			// text-align: justify
 			text-align: center
-			display: flex
-			flex: row nowrap
 		&-item
+			margin: 0 1%
 			display: inline-block
 			font-size: 20px !important
 			cursor: pointer
 			float: none
 			vertical-align: top
 			line-height: 1.3
-			flex: 1 0 auto
-			&.active-nav-item
-				text-decoration: underline
+			// flex: 1 0 auto
+			position: relative
+			padding-bottom: 5px
+			margin-bottom: 5px
+			+max-screen($mdpi)
+				font-size: 17px !important
+			+max-screen($mobile)
+				margin: 0 6%
+				font-size: 15px !important
+			&:before
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				border-top: 1px solid $white
+				opacity: 0
+				transition: opacity .3s ease
+			&.active-nav-item:before
+				opacity: 1
+				// text-decoration: underline
+	.owl-prev,
+	.owl-next
+		@extend %svg-icon
+		cursor: pointer
+		position: absolute
+		color: $white
+		font-size: 36px
+		top: 50%
+		margin-top: -18px
+		+max-screen($mobile)
+			font-size: 20px
+			margin-top: -10px
+		&.disabled
+			opacity: .5
+			cursor: default
+	.owl-prev
+		@extend .svg-icon-arrow_left
+		left: 0
+	.owl-next
+		@extend .svg-icon-arrow_right
+		right: 0
+	.owl-stage-outer
+		overflow: hidden
+		// margin: 0 20%
+		// +max-screen($hdpi)
+		// 	margin: 0 16%
+		// +max-screen($tablet)
+		// 	margin: 0 40px

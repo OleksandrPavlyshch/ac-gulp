@@ -94,8 +94,12 @@
 .container-wrap .bottom_controls .next-project h3, .container-wrap[data-nav-pos="after_project_2"] .bottom_controls 
 	.next-project span
 		text-align: right !important
+		&.line
+			@extend .svg-icon-arrow_right
 	.previous-project span
 		text-align: left !important
+		&.line
+			@extend .svg-icon-arrow_left
 	.previous-project,
 	.next-project
 		span
@@ -107,10 +111,11 @@
 				font-size: 60px
 				font-weight: 900
 			&.line
-				display: none !important
+				@extend %svg-icon
+				background: none !important
+				height: auto
+				font-size: 30px
+				margin-top: -15px
 			svg
-				margin-top: -25px !important
-				height: 50px !important
-				width: 100px !important
+				display: none !important
 
-	// , .container-wrap[data-nav-pos="after_project_2"] .bottom_controls .previous-project h3, .container-wrap[data-nav-pos="after_project_2"] .bottom_controls .previous-project span
