@@ -25,6 +25,9 @@
 	margin: 0 auto !important
 	padding-left: 10px !important
 	padding-right: 10px !important
+	+max-screen($mdpi)
+		padding-left: 30px !important
+		padding-right: 30px !important
 
 =grid($columns-amount: 12, $col-padding: 5, $column-name: "col-")
 	@for $i from 1 through $columns-amount
