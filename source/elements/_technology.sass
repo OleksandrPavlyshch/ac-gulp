@@ -6,22 +6,37 @@ body .vc_row-fluid .wpb_column
 			width: 33.33% !important
 			float: left !important
 		.svg-icon-holder
-			width: 146px
-			height: 105px
+			max-width: 146px
+			height: 160px
 			text-align: center
 			+max-screen($mobile)
-				width: 75px
-				height: 60px
+				max-width: 96px
+				height: 76px
 			object
 				display: inline-block
-				height: 95px
+				// height: 95px
+				width: 135px
 				+max-screen($mobile)
-					height: 50px
+					// height: 50px
+					width: 80px !important
+					max-height: 75px
 				svg
 					stroke-width: 0px
 				// 	fill: $white
 		h5
 			font-size: 12px
+		.width_140
+			object
+				width: 140px
+		.width_120
+			object
+				width: 120px
+		.width_130
+			object
+				width: 130px
+
+
+
 
 	.rfp_text
 		+max-screen($tablet)
@@ -51,3 +66,13 @@ body .vc_row-fluid .wpb_column
 				// 	fill: $white
 
 
+.technology_milestones
+	.subject
+		font-weight: normal
+		font-size: 25px !important
+		color: $astound-navy
+
+.nectar-milestone
+	.number
+		font-family: Roboto !important
+		font-weight: normal !important
