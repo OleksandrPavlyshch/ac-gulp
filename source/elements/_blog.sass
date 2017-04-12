@@ -1,0 +1,151 @@
+.astound_blog_filter
+	background-color: $astound-light-gray
+	padding: 15px
+	text-align: center
+	list-style: none !important
+	margin: 0 !important
+	line-height: 1
+
+	&-wrap
+		padding: 0 !important
+	li
+		display: inline-block
+		vertical-align: top
+		font-size: 18px
+		line-height: 1
+	li + li
+		border-left: 1px solid $white !important
+	&-button
+		font-size: 18px
+		background: none !important
+		border: none !important
+		background: none
+		padding: 0 15px
+		color: $white
+		font-size: 18px
+		line-height: 1.1
+		font-weight: normal
+		cursor: pointer
+		&.is-checked
+			color: $astound-navy
+			background: none !important
+
+#post-area.masonry.classic_enhanced ,
+.blog-recent[data-style*="classic_enhanced"]
+	article.post
+		+min-screen(1600)
+			width: 23.125%
+		+screen(1300, 1600)
+			width: 30.83%
+		.post-meta
+			display: none !important
+		.post-header
+			font-weight: 300
+			font-size: 20px !important
+			overflow: hidden
+			+max-screen($mdpi)
+				font-size: 12px !important
+			h3
+				padding-top: 10px
+				font-size: 40px
+				font-weight: normal
+				line-height: 1.1
+				+max-screen($mdpi)
+					font-size: 35px
+		// .meta-category
+		// 	a
+		// 		bottom: 50px
+		// 		left: 50px
+		// 		top: auto
+		// 		color: $astound-light-gray
+		// 		border-color: $astound-light-gray
+		// 		margin: 0 !important
+		// 		&:hover
+		// 			color: $white
+		// 			border-color: $astound-blue
+	article.post.large_featured
+		// +min-screen(1600)
+		// 	width: 47.65% !important
+		+min-screen(1300)
+			width: 97.1% !important
+		.post-content
+			min-height: 600px
+		.post-meta
+			display: none !important
+		.article-content-wrap
+			padding: 50px !important
+			top: 0
+			transform: none
+		.meta-category
+			a
+				bottom: 50px
+				left: 50px
+				top: auto
+				color: $astound-light-gray
+				border-color: $astound-light-gray
+				margin: 0 !important
+				&:hover
+					color: $white
+					border-color: $astound-blue
+		.article-content-wrap
+			position: static
+			.post-header
+				font-weight: 300
+				font-size: 20px !important
+				overflow: hidden
+				+max-screen($mdpi)
+					font-size: 12px !important
+				h3
+					color: $astound-navy
+					padding-top: 10px
+					font-size: 40px
+					font-weight: normal
+					line-height: 1.1
+					+max-screen($mdpi)
+						font-size: 35px
+	article.post.regular
+		+min-screen(1600)
+			width: 23.125%
+		+screen(1300, 1600)
+			width: 30.83%
+		.post-content
+			min-height: 600px
+			// position: absolute
+			// left: 0
+			// top: 0
+			// bottom: 0
+			// right: 0
+		.post-meta
+			display: none !important
+		.meta-category
+			a
+				bottom: 50px
+				left: 50px
+				top: auto
+				color: $astound-light-gray
+				border-color: $astound-light-gray
+				margin: 0 !important
+				&:hover
+					color: $white
+					border-color: $astound-blue
+		.article-content-wrap
+			position: static
+			.post-header
+				position: absolute
+				top: 40px
+				left: 50px
+				color: $white
+				font-weight: 300
+				font-size: 20px !important
+				overflow: hidden
+				max-height: 170px
+				+max-screen($mdpi)
+					font-size: 12px !important
+				h3
+					color: $white
+					padding-top: 5px
+					font-size: 40px
+					font-weight: normal
+					line-height: 1.1
+					+max-screen($mdpi)
+						font-size: 35px
