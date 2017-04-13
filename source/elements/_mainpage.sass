@@ -95,6 +95,14 @@ span.wpcf7-list-item
 	h5
 		font-size: 20px !important
 		// letter-spacing: 2px
+	img
+		max-height: 110px
+		+max-screen($hdpi)
+			max-height: 95px
+		+max-screen($mdpi)
+			max-height: 84px
+		+max-screen($tablet)
+			max-height: 78px
 
 .homepage_partners
 	&-icon
@@ -365,7 +373,7 @@ span.wpcf7-list-item
 		margin-bottom: 0 !important
 	&-wrap
 		padding-top: 90px !important
-		padding-bottom: 105px !important
+		padding-bottom: 50px !important
 		padding-left: 7%
 		padding-right: 7%
 		+max-screen($mdpi)
@@ -427,9 +435,10 @@ span.wpcf7-list-item
 				+max-screen($tablet)
 					width: 100%
 					left: 0
-		&:hover &-title
+		// &:hover &-title,
+		&.active_word &-title
 			h1
-				color: $astound-navy
+				color: $astound-navy !important
 			&:before
 				width: 97%
 
@@ -457,7 +466,8 @@ span.wpcf7-list-item
 				max-height: none
 				margin: 3em auto 3em !important
 				visibility: visible
-		&:hover &-popup
+		// &:hover &-popup,
+		&.active_word &-popup
 			opacity: 1
 			visibility: visible
 
