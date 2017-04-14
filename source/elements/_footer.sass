@@ -15,6 +15,10 @@
 				vertical-align: top
 				max-width: 13%
 				text-align: left !important
+
+				&.last_menu_column
+					width: 175px !important
+					max-width: none
 			a
 				font-size: 16px
 				font-weight: 500
@@ -90,3 +94,26 @@
 			
 .widget_the_social_links
 	float: right
+
+.footer_adress
+	padding: 0 !important
+	margin: 0 !important
+	position: relative
+	text-align: left
+	font-size: 14px !important
+	line-height: 1.2 !important
+	font-weight: normal !important
+	&-inner
+		position: absolute
+		bottom: 71px
+		right: 0
+		+max-screen($tablet)
+			bottom: 130px
+		+max-screen($mobile)
+			position: static
+			text-align: center
+			margin: -20px 0 40px
+
+
+
+	// display: inline-block
