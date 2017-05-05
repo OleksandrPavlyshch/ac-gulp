@@ -1,5 +1,7 @@
 .testimonial_slider[data-style="minimal"] blockquote
 	text-align: left
+	+max-screen($mobile)
+			line-height: .9!important
 	+min-screen($mobile)
 		padding: 0 25px 0 85px
 		// position: relative
@@ -16,11 +18,21 @@
 		padding-bottom: 10px
 		font-size: 35px
 		line-height: 1.4
+		+max-screen($mdpi)
+			font-size: 30px
+		+max-screen($tablet)
+			font-size: 25px
+		+max-screen($mobile)
+			font-size: 20px
 	body & span
 		display: inline
 		font-size: 18px !important
 		color: $astound-dark-gray
 		font-weight: 700 !important
+		+max-screen($tablet)
+			font-size: 15px!important
+		+max-screen($mobile)
+			font-size: 12px !important
 		&.title
 			font-style: normal !important
 			&:before

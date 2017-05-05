@@ -44,23 +44,14 @@
 		%#{$column-name}-offset-#{$i}
 			margin-left: (100%/$columns-amount)*$i
 
+.title_bg_block
+	+max-screen($tablet)
+		padding-top: 150px !important
+		padding-bottom: 150px !important
 
-// // +max-screen($tablet)
-// 	// +grid($column-name: "col-md", $col-padding: 0)
-
-// +max-screen($tablet)
-// 	%block
-// 		width: auto
-// 		float: none
-// 		padding-left: 0
-// 		padding-right: 0
-// 	%offset
-// 		margin-left: 0
-// 	@for $i from 1 through 12
-// 		%col-#{$i}
-// 			@extend %block
-// 		%col-offset-#{$i}
-// 			@extend %offset
+	+max-screen($mobile)
+		padding-top: 100px !important
+		padding-bottom: 100px !important
 
 
 .hide

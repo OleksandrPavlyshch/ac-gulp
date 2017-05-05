@@ -82,12 +82,13 @@
 .astound_link_needs
 	display: inline-block
 	position: relative
-	font-size: 42px
 	line-height: 1
 	font-weight: 400 !important
 	color: $astound-navy
+	font-size: 25px
+	+min-screen($mobile)
+		font-size: 42px
 	&:before
-		content: ""
 		position: absolute
 		left: 0
 		top: 100%
@@ -97,12 +98,14 @@
 		height: 2px
 		background-color: $astound-blue
 		backface-visibility: hidden
-		+min-screen($tablet)
+		+min-screen($mobile)
+			content: ""
+			text-decoration: none
 			animation: portSliderLine2 0.42s cubic-bezier(0.42, 0, 0, 1) forwards
 	&:hover
 		color: $astound-navy
 		&:before
-			+min-screen($tablet)
+			+min-screen($mobile)
 				animation: portSliderLine 0.42s cubic-bezier(0.42, 0, 0, 1) forwards
 
 .technology_milestone_wrap

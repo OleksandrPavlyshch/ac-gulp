@@ -55,7 +55,6 @@
 			display: inline-block
 			position: relative
 			&:before
-				content: ""
 				position: absolute
 				left: 0
 				top: 100%
@@ -66,6 +65,7 @@
 				background-color: $astound-blue
 				backface-visibility: hidden
 				+min-screen($tablet)
+					content: ""
 					animation: portSliderLine2 0.42s cubic-bezier(0.42, 0, 0, 1) forwards
 			&:hover:before
 				+min-screen($tablet)
