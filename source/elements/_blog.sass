@@ -30,6 +30,120 @@
 			color: $astound-navy
 			background: none !important
 
+
+#post-area.masonry
+	&.classic_enhanced .masonry-blog-item
+		.article-content-wrap
+			padding: 50px 50px 100px !important
+		.inner-wrap
+			border-radius: 10px !important
+	.masonry-blog-item.regular
+		.img-link
+			display: none !important
+		.meta-category
+			a
+				bottom: 50px
+				left: 50px
+				top: auto !important
+				color: $astound-light-gray !important
+				border-color: $astound-light-gray !important
+				margin: 0 !important
+				&:hover
+					color: $white !important
+					border-color: $astound-blue !important
+		.post-header
+			margin: -50px -50px 50px -50px
+			padding: 50px 50px 70px
+			min-height: 150px
+			background-color: $evening-sea
+			color: $white
+			font-weight: 100
+			font-size: 14px !important
+			background-position: 50% 50%
+			// background-size: cover
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			transition: background-size .4s ease-out
+			.title
+				color: $white
+				transition: color .4s ease-out
+				font-weight: 400
+				padding-top: 10px
+		&:hover .post-header
+			background-size: 120% 120%
+		&.category-in-the-news:hover .post-header .title
+			color: $astound-mint
+		&.category-research .post-header
+			background-image: url("./img/researach-bg.jpg")
+		&.category-thought-leadership-blog .post-header
+			background-image: url("./img/blog-bg.jpg")
+		.post-meta
+			border: none !important
+			display: none !important
+			.date,
+			.nectar-love-wrap
+				display: none !important
+			.meta-author
+				display: none !important
+				font-weight: 600
+				a
+					font-size: 22px !important
+					&:before
+						content: "By "
+				.icon-default-style
+					display: none !important
+
+	.masonry-blog-item.large_featured
+		.article-content-wrap
+			transform: none
+			position: static
+		.post-featured-img
+			background-color: $evening-sea !important
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			transition: background-size .4s ease-out
+		&.category-research .post-featured-img
+			background-image: url("./img/researach-bg.jpg")
+		&.category-thought-leadership-blog .post-featured-img
+			background-image: url("./img/blog-bg.jpg")
+		.meta-category
+			a
+				position: absolute
+				bottom: 50px
+				left: 50px
+				top: auto !important
+				color: $astound-light-gray !important
+				border-color: $astound-light-gray !important
+				margin: 0 !important
+				&:hover
+					color: $white !important
+					border-color: $astound-blue !important
+		.post-header
+			font-weight: 100
+			font-size: 14px !important
+			
+			.title
+				font-weight: 400
+				padding-top: 40px
+				padding-bottom: 20px
+				color: $astound-navy
+		.post-meta
+			border: none !important
+			display: none !important
+			.date,
+			.nectar-love-wrap
+				display: none !important
+			.meta-author
+				display: none !important
+				font-weight: 600
+				a
+					font-size: 22px !important
+					&:before
+						content: "By "
+				.icon-default-style
+					display: none !important
+
+
 #post-area.masonry.classic_enhanced ,
 .blog-recent[data-style*="classic_enhanced"]
 	article.post
@@ -37,115 +151,157 @@
 			width: 23.125%
 		+screen(1300, 1600)
 			width: 30.83%
-		.post-meta
-			display: none !important
-		.post-header
-			font-weight: 300
-			font-size: 20px !important
-			overflow: hidden
-			+max-screen($mdpi)
-				font-size: 12px !important
-			h3
-				padding-top: 10px
-				font-size: 40px
-				font-weight: normal
-				line-height: 1.1
-				+max-screen($mdpi)
-					font-size: 35px
-		// .meta-category
-		// 	a
-		// 		bottom: 50px
-		// 		left: 50px
-		// 		top: auto
-		// 		color: $astound-light-gray
-		// 		border-color: $astound-light-gray
-		// 		margin: 0 !important
-		// 		&:hover
-		// 			color: $white
-		// 			border-color: $astound-blue
 	article.post.large_featured
-		// +min-screen(1600)
-		// 	width: 47.65% !important
-		+min-screen(1300)
-			width: 97.1% !important
-		.post-content
-			min-height: 600px
-		.post-meta
-			display: none !important
-		.article-content-wrap
-			padding: 50px !important
-			top: 0
-			transform: none
-		.meta-category
-			a
-				bottom: 50px
-				left: 50px
-				top: auto
-				color: $astound-light-gray
-				border-color: $astound-light-gray
-				margin: 0 !important
-				&:hover
-					color: $white
-					border-color: $astound-blue
-		.article-content-wrap
-			position: static
-			.post-header
-				font-weight: 300
-				font-size: 20px !important
-				overflow: hidden
-				+max-screen($mdpi)
-					font-size: 12px !important
-				h3
-					color: $astound-navy
-					padding-top: 10px
-					font-size: 40px
-					font-weight: normal
-					line-height: 1.1
-					+max-screen($mdpi)
-						font-size: 35px
-	article.post.regular
 		+min-screen(1600)
-			width: 23.125%
+			// width: 47.65% !important
+			width: 72.375% !important
 		+screen(1300, 1600)
-			width: 30.83%
-		.post-content
-			min-height: 600px
-			// position: absolute
-			// left: 0
-			// top: 0
-			// bottom: 0
-			// right: 0
-		.post-meta
-			display: none !important
+			width: 96.5% !important
+
+.post-template-default
+	.page-header-bg-image
+		// background-image: none !important
+		background: none !important
+		color: $dim-gray
+	#page-header-bg
+		background: none !important
+		.inner-wrap
+			color: $dim-gray !important
+	&.single .heading-title[data-header-style="default_minimal"] .meta-category a
+		color: $dim-gray 
+		border-color: $dim-gray
+		&:hover
+			color: $white
+			border-color: $astound-blue
+	.section-title.blog-title
+		display: flex
+		flex-direction: column
+		color: $dim-gray !important
+		.meta-category,
+		.entry-title,
+		#single-below-header
+			flex: 1
+			font-weight: 100
+		.entry-title
+			order: 1
+		#single-below-header
+			order: 2
+			font-size: 20px
+			span
+				font-size: 20px
+				color: $dim-gray !important
 		.meta-category
-			a
-				bottom: 50px
-				left: 50px
-				top: auto
-				color: $astound-light-gray
-				border-color: $astound-light-gray
-				margin: 0 !important
-				&:hover
-					color: $white
-					border-color: $astound-blue
-		.article-content-wrap
-			position: static
-			.post-header
-				position: absolute
-				top: 40px
-				left: 50px
-				color: $white
-				font-weight: 300
-				font-size: 20px !important
-				overflow: hidden
-				max-height: 170px
-				+max-screen($mdpi)
-					font-size: 12px !important
-				h3
-					color: $white
-					padding-top: 5px
-					font-size: 40px
-					font-weight: normal
-					line-height: 1.1
-					+max-screen($mdpi)
-						font-size: 35px
+			order: 3
+			margin-top: 50px
+		a,
+		h1
+			color: inherit
+	.blog_next_prev_buttons
+		display: none !important
+	.meta-comment-count
+		display: none !important
+
+
+
+
+// 		.post-meta
+// 			display: none !important
+// 		.post-header
+// 			font-weight: 300
+// 			font-size: 20px !important
+// 			overflow: hidden
+// 			+max-screen($mdpi)
+// 				font-size: 12px !important
+// 			h3
+// 				padding-top: 10px
+// 				font-size: 40px
+// 				font-weight: normal
+// 				line-height: 1.1
+// 				+max-screen($mdpi)
+// 					font-size: 35px
+// 	article.post.large_featured
+// 		// +min-screen(1600)
+// 		// 	width: 47.65% !important
+// 		+min-screen(1300)
+// 			width: 97.1% !important
+// 		.post-content
+// 			min-height: 600px
+// 		.post-meta
+// 			display: none !important
+// 		.article-content-wrap
+// 			padding: 50px !important
+// 			top: 0
+// 			transform: none
+// 		.meta-category
+// 			a
+// 				bottom: 50px
+// 				left: 50px
+// 				top: auto
+// 				color: $astound-light-gray
+// 				border-color: $astound-light-gray
+// 				margin: 0 !important
+// 				&:hover
+// 					color: $white
+// 					border-color: $astound-blue
+// 		.article-content-wrap
+// 			position: static
+// 			.post-header
+// 				font-weight: 300
+// 				font-size: 20px !important
+// 				overflow: hidden
+// 				+max-screen($mdpi)
+// 					font-size: 12px !important
+// 				h3
+// 					color: $astound-navy
+// 					padding-top: 10px
+// 					font-size: 40px
+// 					font-weight: normal
+// 					line-height: 1.1
+// 					+max-screen($mdpi)
+// 						font-size: 35px
+// 	article.post.regular
+// 		+min-screen(1600)
+// 			width: 23.125%
+// 		+screen(1300, 1600)
+// 			width: 30.83%
+// 		.post-content
+// 			min-height: 600px
+// 			// position: absolute
+// 			// left: 0
+// 			// top: 0
+// 			// bottom: 0
+// 			// right: 0
+// 		.post-meta
+// 			display: none !important
+// 		.meta-category
+// 			a
+// 				bottom: 50px
+// 				left: 50px
+// 				top: auto
+// 				color: $astound-light-gray
+// 				border-color: $astound-light-gray
+// 				margin: 0 !important
+// 				&:hover
+// 					color: $white
+// 					border-color: $astound-blue
+// 		.article-content-wrap
+// 			position: static
+// 			.post-header
+// 				position: absolute
+// 				top: 40px
+// 				left: 50px
+// 				color: $white
+// 				font-weight: 300
+// 				font-size: 20px !important
+// 				overflow: hidden
+// 				max-height: 170px
+// 				+max-screen($mdpi)
+// 					font-size: 12px !important
+// 				h3
+// 					color: $white
+// 					padding-top: 5px
+// 					font-size: 40px
+// 					font-weight: normal
+// 					line-height: 1.1
+// 					+max-screen($mdpi)
+// 						font-size: 35px
