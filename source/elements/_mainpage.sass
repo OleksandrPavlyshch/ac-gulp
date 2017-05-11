@@ -107,6 +107,8 @@ span.wpcf7-list-item
 			max-height: 84px
 		+max-screen($tablet)
 			max-height: 78px
+		+ie
+			width: auto !important
 
 .homepage_partners
 	&-icon
@@ -129,7 +131,13 @@ span.wpcf7-list-item
 			height: 92px
 			svg
 				fill: $white
+	&-image
+		display: none !important
 	+ie
+		&-image
+			display: block !important
+			vertical-align: middle
+			height: 92px
 		&-svg_icon
 			display: none
 	&-font_icon
