@@ -33,14 +33,25 @@
 
 #post-area.masonry
 	&.classic_enhanced .masonry-blog-item
+		font-size: 16px
+		min-height: 755px
+		+max-screen($tablet)
+			min-height: 825px
+		.excerpt
+			font-size: 1.3em
+			line-height: 1.8
 		.article-content-wrap
 			padding: 50px 50px 100px !important
 			transform: none
 			position: static !important
 			overflow: hidden
-			max-height: calc(100% - 100px)
+			max-height: calc(100% - 85px)
 		.inner-wrap
 			border-radius: 10px !important
+			height: 100%
+		.content-inner,
+		.post-content
+			height: 100%
 	.masonry-blog-item.regular
 		.img-link
 			display: none !important
@@ -58,18 +69,20 @@
 					border-color: $astound-blue !important
 		.post-header
 			margin: -50px -50px 50px -50px
-			padding: 50px 50px 70px
-			min-height: 150px
+			padding: 50px
+			min-height: 268px
 			background-color: $astound-navy
 			color: $white
 			font-weight: 400
-			font-size: 14px !important
+			font-size: .9em !important
 			background-position: 50% 50%
 			// background-size: cover
 			background-size: 100% 100%
 			background-repeat: no-repeat
 			transition: background-size .4s ease-out
 			.title
+				font-size: 2.5em !important
+				line-height: 1.2
 				color: $white
 				transition: color .4s ease-out
 				font-weight: 400
@@ -120,7 +133,7 @@
 		.meta-category
 			a
 				position: absolute
-				bottom: 50px
+				bottom: 40px
 				left: 50px
 				top: auto !important
 				color: $astound-light-gray !important
@@ -131,13 +144,14 @@
 					border-color: $astound-blue !important
 		.post-header
 			font-weight: 400
-			font-size: 14px !important
-			
+			font-size: .9em !important
 			.title
 				font-weight: 400
 				padding-top: 40px
 				padding-bottom: 20px
 				color: $astound-navy
+				font-size: 2.7em !important
+				line-height: 1
 		.post-meta
 			border: none !important
 			display: none !important
