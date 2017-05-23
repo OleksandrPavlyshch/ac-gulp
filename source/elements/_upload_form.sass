@@ -1,0 +1,108 @@
+.upload_form
+	position: relative
+	.wfu_overlay_editor
+		display: none !important
+	.wordpress_file_upload_block_1
+		min-height: 150px
+		position: relative
+	.file_div_clean_responsive
+		margin-bottom: 20px
+	#upload_1
+		float: right
+	#wordpress_file_upload_progressbar_1
+		display: block !important
+		margin-bottom: 0 !important
+		position: absolute
+		bottom: 5px
+		left: 170px
+		right: 120px
+		#progressbar_1
+			margin-bottom: 0
+			display: block
+			.file_progress_bar
+				display: block
+				width: 100%
+				border: none
+				background-color: #c8c9c7
+				padding: 0
+				.file_progress_inner
+					height: 16px
+					background-color: #c8c9c7
+					border: none
+					background-color: #c8c9c7
+					#progressbar_1_animation
+						-webkit-transition: width .4s ease
+						transition: width .4s ease
+						&:after
+							-webkit-transition: width .4s ease
+							transition: width .4s ease
+							background-image: none
+					.file_progress_noanimation, .file_progress_progressive
+						height: 16px
+						position: absolute
+						left: 50%
+						-webkit-transform: translateX(-50%)
+						-ms-transform: translateX(-50%)
+						transform: translateX(-50%)
+						background-color: #307FE2
+	#wordpress_file_upload_submit_1
+		position: absolute
+		bottom: 0
+		right: 0
+		margin-bottom: 0 !important
+		background: none
+		border: none
+		.file_input_submit
+			color: #307FE2 !important
+			font-family: Roboto, Helvetica, Arial, sans-serif !important
+			cursor: pointer
+			font-size: 16px !important
+			font-weight: 500 !important
+			display: inline-block
+			line-height: 1.5
+			-webkit-transition: all 0.45s cubic-bezier(0.25, 1, 0.33, 1)
+			transition: all 0.45s cubic-bezier(0.25, 1, 0.33, 1)
+			background: none
+			border: none
+			padding: 0
+			&:hover
+				text-decoration: underline
+				background: none !important
+	#wordpress_file_upload_form_1
+		position: absolute
+		bottom: -10px
+		left: 0
+		margin-bottom: 0 !important
+		background: none
+		border: none
+		.file_input_uploadform
+			height: auto
+			overflow: visible
+			background: none
+			border: none
+			width: auto
+			.minimal-form-input
+				padding: 0
+				position: absolute
+				top: 0
+				bottom: 0
+				height: 58px
+				label
+					display: none !important
+		.file_input_button,
+		.file_input_button_hover
+			background: #1b365d
+			border: none
+			color: #ffffff
+			font-size: 16px !important
+			line-height: 16px
+			padding: 15px 30px 15px 50px
+			border-radius: 5px
+			width: auto
+			height: auto
+			position: static
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAMAAABXc8oyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDAwQzY2MUYzRUY3MTFFNzkyRTlENTdCNTI0MDk5OTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDAwQzY2MUUzRUY3MTFFNzkyRTlENTdCNTI0MDk5OTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSI0Q0M3NzJFQkUyQUUxRUY3NzZFQUMzQkRCMUVERkNBMyIgc3RSZWY6ZG9jdW1lbnRJRD0iNENDNzcyRUJFMkFFMUVGNzc2RUFDM0JEQjFFREZDQTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6atzX3AAAA3lBMVEX////BzNXV3uT8/f3L09fY3uHCzNPAzNX9/f3L09jW3uPK09nBys/AyM69yc/Y3+Hv8fPt8PHM09fDztPJ0tjY4Obx8/TE0dXT2t/X3uLp7e/a3+H19vj4+/z8/fy/yMzY3+LV3uDg5+j///7P1tu8xsy/zNS/y9TN1dvk6Ou7yM7h5+vX4OS8yM+8xs7b4OLCzNLM1Nnv8/TEzdS+yM/s7/DM19j5+vq6xMnV3+LY3uLN1Nnq7fD3+PnV3uLT3eL09vi8x8zM0tf7/PzS3N79/v69yM3R2NzI0df////Ya1aWAAAASnRSTlP/////////////////////////////////////////////////////////////////////////////////////////////////AForvxsAAACiSURBVHja7NG3EsJADEXRBwu2MTnnZHLOOSeD/v+HcM/MrgoqhltqzqiQUD6ZplvVMbmGBlZ9jJq6S5neaoOY/T40mPASP7NgwIDNgYmC87GGGu6meNSAgQo+99CqGBcRlMOOhVfqjskcpZkU9rCMUAVXGiIkhavMgkQYHjrUo8rziCz8rDuKrbORBb1/+CUY48ENfCx4yzMhddO5z+FbgAEALwc0JpYTvIAAAAAASUVORK5CYII=")
+			background-position: 15px 50%
+			background-repeat: no-repeat
+			background-size: 26px 22px
+			background-color: #307FE2
