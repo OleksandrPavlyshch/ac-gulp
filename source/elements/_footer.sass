@@ -41,11 +41,15 @@
 				+max-screen($mobile)
 					display: none !important
 
-	.footer_copy
-		font-size: 14px
-		font-weight: 400
-		+max-screen($mobile)
-			padding: 0 15px
+	.footer
+		&_copy,
+		&_privacy_policy
+			font-size: 14px
+			font-weight: 400
+			+max-screen($mobile)
+				padding: 0 15px
+			a:hover
+				text-decoration: underline
 
 .ascend #footer-outer .widget.widget_nav_menu li
 	padding: 2px 0 !important

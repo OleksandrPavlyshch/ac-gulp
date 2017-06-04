@@ -390,9 +390,15 @@ span.wpcf7-list-item
 		padding-bottom: 50px !important
 		padding-left: 7%
 		padding-right: 7%
+		&.dach_version
+			padding-left: 4%
+			padding-right: 4%
 		+max-screen($mdpi)
 			padding-left: 4%
 			padding-right: 4%
+			&.dach_version
+				padding-left: 1%
+				padding-right: 1%
 		+max-screen($tablet)
 			padding: 0 !important
 	>.col.span_12
@@ -434,6 +440,8 @@ span.wpcf7-list-item
 				font-size: 70px
 				color: $astound-light-gray
 				transition: color 1s ease
+				.dach_version &
+					font-size: 65px
 				+max-screen($hdpi)
 					font-size: 49px
 					color: $astound-light-gray !important
