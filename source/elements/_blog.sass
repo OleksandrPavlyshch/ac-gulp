@@ -36,7 +36,9 @@
 		font-size: 16px
 		min-height: 755px
 		+max-screen($tablet)
-			min-height: 825px
+			min-height: 840px
+		+screen(800, $tablet)
+			min-height: 1110px !important
 		.excerpt
 			font-size: 1.3em
 			line-height: 1.8
@@ -45,7 +47,7 @@
 			transform: none
 			position: static !important
 			overflow: hidden
-			max-height: calc(100% - 85px)
+			max-height: calc(100% - 77px)
 		.inner-wrap
 			border-radius: 10px !important
 			height: 100%
@@ -114,7 +116,32 @@
 				.icon-default-style
 					display: none !important
 
-	.masonry-blog-item.large_featured
+	.masonry-blog-item.post.large_featured
+		+screen(691, $tablet)
+			min-height: 1192px
+			width: 58.85% !important
+
+			.img-link
+				// padding-bottom: 100%
+				width: 100% !important
+				position: static !important
+			.content-inner
+				width: 100% !important
+				.article-content-wrap
+					padding-top: 25px !important
+			.post-header .title
+				padding-top: 20px
+				font-size: 2.2em
+				padding-bottom: 0
+		+screen(800, $tablet)
+			min-height: 1110px !important
+			width: 58.85% !important
+			.img-link
+				height: 374px !important
+		+screen(690, 800)
+			width: 47.7% !important
+			.img-link
+				height: 312px !important
 		.article-content-wrap
 			transform: none
 			position: static
@@ -124,6 +151,7 @@
 				// max-height: 100%
 				height: calc(100% - 100px)
 				overflow: hidden
+
 		.post-featured-img
 			background-color: $astound-navy !important
 			background-size: 100% 100%
