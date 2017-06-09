@@ -40,7 +40,7 @@
 		+screen(800, $tablet)
 			min-height: 1110px !important
 		.excerpt
-			font-size: 1.3em
+			font-size: 1.25em
 			line-height: 1.8
 		.article-content-wrap
 			padding: 50px 50px 100px !important
@@ -51,7 +51,7 @@
 		.inner-wrap
 			border-radius: 10px !important
 			height: 100%
-		.content-inner,
+		// .content-inner,
 		.post-content
 			height: 100%
 	.masonry-blog-item.regular
@@ -81,12 +81,12 @@
 			// background-size: cover
 			background-size: 100% 100%
 			background-repeat: no-repeat
-			transition: background-size .4s ease-out
+			transition: background-size, transform .7s cubic-bezier(.2,1,.22,1)
 			.title
 				font-size: 2.5em !important
 				line-height: 1.2
 				color: $white
-				transition: color .4s ease-out
+				transition: color .7s cubic-bezier(.2,1,.22,1)
 				font-weight: 400
 				padding-top: 10px
 		&:hover .post-header
@@ -118,8 +118,8 @@
 
 	.masonry-blog-item.post.large_featured
 		+screen(691, $tablet)
-			min-height: 1192px
-			width: 58.85% !important
+			min-height: 1232px
+			width: 65.95% !important
 
 			.img-link
 				// padding-bottom: 100%
@@ -127,6 +127,7 @@
 				position: static !important
 			.content-inner
 				width: 100% !important
+				position: static !important
 				.article-content-wrap
 					padding-top: 25px !important
 			.post-header .title
@@ -146,17 +147,17 @@
 			transform: none
 			position: static
 			overflow: hidden
-			max-height: calc(100% - 78px)
+			max-height: calc(100% - 398px)
 			+max-screen($tablet)
 				// max-height: 100%
-				height: calc(100% - 100px)
+				// height: calc(100% - 100px)
 				overflow: hidden
 
 		.post-featured-img
 			background-color: $astound-navy !important
 			background-size: 100% 100%
 			background-repeat: no-repeat
-			transition: background-size .4s ease-out
+			transition: background-size, transform .7s cubic-bezier(.2,1,.22,1)
 		&.category-research .post-featured-img
 			background-image: url("./img/researach-bg.jpg")
 		&.category-thought-leadership-blog .post-featured-img
@@ -258,106 +259,3 @@
 		display: none !important
 
 
-
-
-// 		.post-meta
-// 			display: none !important
-// 		.post-header
-// 			font-weight: 300
-// 			font-size: 20px !important
-// 			overflow: hidden
-// 			+max-screen($mdpi)
-// 				font-size: 12px !important
-// 			h3
-// 				padding-top: 10px
-// 				font-size: 40px
-// 				font-weight: normal
-// 				line-height: 1.1
-// 				+max-screen($mdpi)
-// 					font-size: 35px
-// 	article.post.large_featured
-// 		// +min-screen(1600)
-// 		// 	width: 47.65% !important
-// 		+min-screen(1300)
-// 			width: 97.1% !important
-// 		.post-content
-// 			min-height: 600px
-// 		.post-meta
-// 			display: none !important
-// 		.article-content-wrap
-// 			padding: 50px !important
-// 			top: 0
-// 			transform: none
-// 		.meta-category
-// 			a
-// 				bottom: 50px
-// 				left: 50px
-// 				top: auto
-// 				color: $astound-light-gray
-// 				border-color: $astound-light-gray
-// 				margin: 0 !important
-// 				&:hover
-// 					color: $white
-// 					border-color: $astound-blue
-// 		.article-content-wrap
-// 			position: static
-// 			.post-header
-// 				font-weight: 300
-// 				font-size: 20px !important
-// 				overflow: hidden
-// 				+max-screen($mdpi)
-// 					font-size: 12px !important
-// 				h3
-// 					color: $astound-navy
-// 					padding-top: 10px
-// 					font-size: 40px
-// 					font-weight: normal
-// 					line-height: 1.1
-// 					+max-screen($mdpi)
-// 						font-size: 35px
-// 	article.post.regular
-// 		+min-screen(1600)
-// 			width: 23.125%
-// 		+screen(1300, 1600)
-// 			width: 30.83%
-// 		.post-content
-// 			min-height: 600px
-// 			// position: absolute
-// 			// left: 0
-// 			// top: 0
-// 			// bottom: 0
-// 			// right: 0
-// 		.post-meta
-// 			display: none !important
-// 		.meta-category
-// 			a
-// 				bottom: 50px
-// 				left: 50px
-// 				top: auto
-// 				color: $astound-light-gray
-// 				border-color: $astound-light-gray
-// 				margin: 0 !important
-// 				&:hover
-// 					color: $white
-// 					border-color: $astound-blue
-// 		.article-content-wrap
-// 			position: static
-// 			.post-header
-// 				position: absolute
-// 				top: 40px
-// 				left: 50px
-// 				color: $white
-// 				font-weight: 300
-// 				font-size: 20px !important
-// 				overflow: hidden
-// 				max-height: 170px
-// 				+max-screen($mdpi)
-// 					font-size: 12px !important
-// 				h3
-// 					color: $white
-// 					padding-top: 5px
-// 					font-size: 40px
-// 					font-weight: normal
-// 					line-height: 1.1
-// 					+max-screen($mdpi)
-// 						font-size: 35px
