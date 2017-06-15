@@ -81,7 +81,7 @@
 			// background-size: cover
 			background-size: 100% 100%
 			background-repeat: no-repeat
-			transition: background-size, transform .7s cubic-bezier(.2,1,.22,1)
+			transition: background-size .7s cubic-bezier(.2,1,.22,1), transform .7s cubic-bezier(.2,1,.22,1)
 			.title
 				font-size: 2.5em !important
 				line-height: 1.2
@@ -147,8 +147,8 @@
 			transform: none
 			position: static
 			overflow: hidden
-			max-height: calc(100% - 398px)
 			+max-screen($tablet)
+				max-height: calc(100% - 398px)
 				// max-height: 100%
 				// height: calc(100% - 100px)
 				overflow: hidden
@@ -157,7 +157,7 @@
 			background-color: $astound-navy !important
 			background-size: 100% 100%
 			background-repeat: no-repeat
-			transition: background-size, transform .7s cubic-bezier(.2,1,.22,1)
+			transition: background-size .7s cubic-bezier(.2,1,.22,1), transform .7s cubic-bezier(.2,1,.22,1)
 		&.category-research .post-featured-img
 			background-image: url("./img/researach-bg.jpg")
 		&.category-thought-leadership-blog .post-featured-img
@@ -259,3 +259,12 @@
 		display: none !important
 
 
+
+.excerpt-custom
+	&_sub_header,
+	&_author_header
+		font-weight: 700
+		line-height: 1
+	&_sub_header
+		color: $astound-navy
+		margin-bottom: 15px
