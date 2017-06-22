@@ -1,8 +1,8 @@
 .astound_team_member
 	background-position: 50% 0 !important
 	overflow: hidden
-	&.vc_col-sm-4
-		+min-screen(690)
+	.full-width-content &.vc_col-sm-4
+		+min-screen($small)
 			width: 33.3% !important
 	&:before
 		content: ''
@@ -32,17 +32,24 @@
 		width: 100%
 		padding: 0 5px
 		text-align: center
+		+screen($small, $mobile)
+			bottom: 30px
 		h3
 			font-size: 14px
 			line-height: 20px
 			color: #ffffff
 			font-weight: 900 !important
 			margin-bottom: 0 !important
+			+screen($small, $mobile)
+				font-size: 17px !important
+				line-height: 1
 		p
 			color: rgba(255, 255, 255, 0.8)
 			padding: 7px 0 0 0 !important
 			line-height: 1 !important
 			font-weight: normal !important
+			+screen($small, $mobile)
+				font-size: 13px
 
 	&-links
 		text-align: center
