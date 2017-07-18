@@ -5,4 +5,5 @@ var gulp = require('gulp')
 
 gulp.task('watch', function(){
 	gulp.watch(configs.source.sass, ['sass']);
+	gulp.watch(configs.source.js, ['scripts']);
 });

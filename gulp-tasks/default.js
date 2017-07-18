@@ -5,5 +5,5 @@ var gulp = require('gulp')
 
 
 gulp.task('default', function () {
-	runSequence('iconfont', 'fonts', 'sass', 'watch');
+	runSequence('iconfont', 'fonts', 'sass', 'scripts', 'watch');
 });

@@ -21,7 +21,7 @@ var soursePath = './source/'
 			'images': buildPath + 'images/'
 			, 'css': '../astoundcommerce-website/wp-content/themes/salient'
 			, 'fonts': '../astoundcommerce-website/wp-content/themes/salient/css/fonts'
-			, 'vendorJs': buildPath + 'js/vendor/'
+			, 'vendorJs': '../wp-content/themes/salient/js'
 			, 'vendorCss':  buildPath + 'css/vendor/'
 			, 'js': buildPath + 'js/'
 			, 'favicon': buildPath
