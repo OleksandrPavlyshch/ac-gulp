@@ -6,13 +6,13 @@ var gulp = require('gulp')
 	, gulpif = require('gulp-if')
 	, concat = require('gulp-concat')
 	, configs = require('./configs')
-	, jsFileName = "index.js";
+	, jsFileName = "astound_bundle.js";
 
 //scripts
 gulp.task('scripts', function() {
 	return gulp.src(configs.source.js)
 	.pipe(plumber())
 	.pipe(gulpif(configs.environment !== 'dev', uglify()))
-	// .pipe(concat(jsFileName))
+	.pipe(concat(jsFileName))
 	.pipe(gulp.dest(configs.build.js));
 });

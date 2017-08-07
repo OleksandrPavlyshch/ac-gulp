@@ -7,7 +7,7 @@ var soursePath = './source/'
 			'images': soursePath + 'images/**/*.*'
 			, 'sass': [soursePath + 'sass/**/*.{sass,scss}', soursePath + 'elements/**/*.{sass,scss}']
 			, 'fonts': soursePath + 'fonts/**/*.*'
-			, 'js': soursePath + 'js/**/*.*'
+			, 'js': soursePath + 'elements/**/*.js'
 			, 'pug': soursePath + 'pages/**/*.pug'
 			, 'elements': soursePath + 'elements/**/*.*'
 			, 'copy_to_build': soursePath + 'copy_to_build/**/*.*'
@@ -21,9 +21,9 @@ var soursePath = './source/'
 			'images': buildPath + 'images/'
 			, 'css': '../astoundcommerce-website/wp-content/themes/salient'
 			, 'fonts': '../astoundcommerce-website/wp-content/themes/salient/css/fonts'
-			, 'vendorJs': '../wp-content/themes/salient/js'
+			, 'js': '../astoundcommerce-website/wp-content/themes/salient/js'
 			, 'vendorCss':  buildPath + 'css/vendor/'
-			, 'js': buildPath + 'js/'
+			// , 'js': buildPath + 'js/'
 			, 'favicon': buildPath
 		}
 	}
