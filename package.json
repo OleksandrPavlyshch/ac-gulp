@@ -1,7 +1,7 @@
 {
-  "name": "packages_for_lifetracker.io",
+  "name": "packages",
   "version": "0.0.1",
-  "repository": "lifetracker.io",
+  "repository": "**",
   "license": "proprietary",
   "engines": {
     "node": ">=5.10.0"

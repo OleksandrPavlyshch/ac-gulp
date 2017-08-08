@@ -1,69 +1,170 @@
 .astound_timeline
-	.wpostahs-slider-design-2
-		.slick-arrow
-			top: 50px !important
-			// +max-screen($mobile)
-			// 	display: none
+	max-width: 1024px
+	margin: 0 auto
+	// overflow: hidden
+	&-years
+		position: relative
+
+		&_content
+			padding-top: 70px
+			text-align: center
+			.slick-slide
+				outline: none
+	&-year
+		text-align: center
+		font-size: 22px
+		color: #75787b
+		line-height: 1
+		&:after
+			content: ''
+			display: block
+			margin: 10px auto 0
+			border-radius: 50%
+			width: 14px
+			height: 14px
+			background-color: #75787b
+		&.slick-current,
+		&:hover
+			color: #307FE2
+			cursor: pointer
+			&:after
+				background-color: #307FE2
+
+	.slick-arrow
+		position: absolute
+		z-index: 999
+		background-color: transparent 
+		top: 20px
+		text-indent: -99999px
+		border: 2px solid #ddd 
+		border-radius: 50% 
+		text-align: center
+		width: 35px 
+		height: 35px 
+		background-size: 10px 17px 
+		outline: none 
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&.slick-prev
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAmCAYAAADAzmuWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTQzMUZDOUIyQUMwMTFFNUE4OURENjk5OUM4RjdGQTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTQzMUZDOUMyQUMwMTFFNUE4OURENjk5OUM4RjdGQTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFNDMxRkM5OTJBQzAxMUU1QTg5REQ2OTk5QzhGN0ZBNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFNDMxRkM5QTJBQzAxMUU1QTg5REQ2OTk5QzhGN0ZBNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbrFmsAAAELSURBVHjatNfdDcIgEAdw2rhAZ3AE48eLvjmCK8gKXUVX6ZtPxsQVXMEVPJojIQ2f9z9JCNCkvwKhcHTH/dYg6fF8zeXpsNtQ8aH217V7o5AYnVym+uCedWiPKXl04Pab8nmljM6wm45eGb0TapE5zqJSuIhK4Cq0Fa5GW+AoStmmXuj/gdbAIrQEi9EcDKEpGEZjsAq6hNXQEFZFPayOeviyQD1sUHiMQBOPBIINDzvEBxQPV4UqvlzHanjsz1PBU3sFjOd2Nwgv7cdivOYEEeG1Z14z3nJKR3EOCCG4CZdEQlW4NHYr4ki0mcU1Au8b5WvQdleFNXxV4Ngt7PmIBt4x3FJ9/shPgAEAnE1vmEVSmyQAAAAASUVORK5CYII=')
+		&.slick-next
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAmCAYAAADAzmuWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUYyRDlEMzUyQUMwMTFFNTkxMENBMjVGMzRBNkJCRTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUYyRDlEMzYyQUMwMTFFNTkxMENBMjVGMzRBNkJCRTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRjJEOUQzMzJBQzAxMUU1OTEwQ0EyNUYzNEE2QkJFNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRjJEOUQzNDJBQzAxMUU1OTEwQ0EyNUYzNEE2QkJFNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpSXay0AAAENSURBVHjarNbLDcIwDADQ1GKBzFLxucCpHYEVYBVWaFfoCPTECSGYhRWIpSBFUT6ObUtWW1d6SfpJ0h33W+NjcLmaxng8X8k6+OPF5d3lZJQC4XMAYgNvl1YDxuF/glrve2+l8NflqI3/n7E6DsG5Kg7RtRoOiZoKDpm6GIfCPREOlftsHAijYuFAfBdZ/HTYWQncjEPjd0/GgfG3knBgzjFVvAtWEE5Y/3X0QQ0bG8HIAnu+RDVsZNgIYVxxblHt6tbBBYTolEBnycsroly4inJgEtoKk9EWOIm6nCWzWzNKgVloDWajJViE5mAxmoJV0BhWQ+ONtxqa2niroLmNtxiNN96rP4pRjJ8AAwAjGnAkCcRA/gAAAABJRU5ErkJggg==')
+		&:hover
+			border: 2px solid #3d3735 
+		+max-screen($tablet)
+			&.slick-next
+				right: -30px 
+			&.slick-prev
+				left: -30px 
+
+	.astound_timeline-years .slick-list.draggable
+		+min-screen($tablet)
+			overflow: visible
+		&:before
+			content: ''
+			position: absolute
+			height: 2px
+			background-color: #75787b
+			top: 38px
+			left: 45px
+			right: 45px
+			+max-screen($mdpi)
+				left: 46px
+				right: 46px
 			+max-screen($tablet)
-				&.slick-next
-					right: -30px !important
-				&.slick-prev
-					left: -30px !important
-		.wpostahs-slider-nav
-			max-width: none
-			.slick-list.draggable
-				+min-screen($tablet)
-					overflow: visible
-				&:before
-					background-color: $astound-dark-gray
-					top: 38px
-					width: auto
-					left: 50px
-					right: 50px
-					+max-screen($mdpi)
-						left: 46px
-						right: 46px
-					+max-screen($tablet)
-						left: 40px
-						right: 40px
-				+min-screen($tablet)
-					&:after
-						content: ''
-						width: 300%
-						margin-left: -150%
-						background: #d8dde7;
-						position: absolute;
-						top: 38px;
-						left: 50%;
-						height: 0
-						z-index: -1
-						border-top: 2px dotted $astound-dark-gray
-			.wpostahs-slider-nav-title
-				color: $astound-dark-gray
-				font-weight: normal
-				font-size: 22px
-				line-height: 1
-				.wpostahs-main-title
-					top: 0
-					margin: 0 !important
-					padding-top: 10px !important
-					button
-						background-color: $astound-dark-gray
-						height: 14px
-						width: 14px
-						border: none
-				&:hover,
-				&.slick-current
-					color: $astound-blue
-					.wpostahs-main-title
-						button
-							background-color: $astound-blue
-		.wpostahs-centent-title
+				left: 40px
+				right: 40px
+		+min-screen($tablet)
+			&:after
+				content: ''
+				width: 300%
+				margin-left: -150%
+				background: #d8dde7
+				position: absolute
+				top: 38px
+				left: 50%
+				height: 0
+				z-index: -1
+				border-top: 2px dotted #75787b
+
+	.slick-slider
+		position: relative
+		display: block
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		-webkit-touch-callout: none
+		-khtml-user-select: none
+		-ms-touch-action: pan-y
+		touch-action: pan-y
+		-webkit-tap-highlight-color: transparent
+
+	.slick-list
+		position: relative
+		display: block
+		overflow: hidden
+		margin: 0
+		padding: 0
+		&:focus
+			outline: none
+		&.dragging
+			cursor: pointer
+			cursor: hand
+
+	.slick-slider
+		.slick-track, .slick-list
+			-webkit-transform: translate3d(0, 0, 0)
+			-moz-transform: translate3d(0, 0, 0)
+			-ms-transform: translate3d(0, 0, 0)
+			-o-transform: translate3d(0, 0, 0)
+			transform: translate3d(0, 0, 0)
+
+	.slick-track
+		position: relative
+		top: 0
+		left: 0
+		display: block
+		&:before
+			display: table
+			content: ''
+		&:after
+			display: table
+			content: ''
+			clear: both
+
+	.slick-loading .slick-track
+		visibility: hidden
+
+	.slick-slide
+		display: none
+		float: left
+		height: 100%
+		min-height: 1px
+
+	[dir='rtl'] .slick-slide
+		float: right
+
+	.slick-slide
+		img
+			display: block
+		&.slick-loading img
 			display: none
-		.wpostahs-slider-nav-title
-			padding-bottom: 0
-		.wpostahs-slider-for
-			padding: 70px 0 0
-		.wpostahs-centent
-			padding: 0
-// .wpostahs-slider-design-2 .wpostahs-slider-nav .slick-list.draggable::before
+		&.dragging img
+			pointer-events: none
+
+	.slick-initialized .slick-slide
+		display: block
+
+	.slick-loading .slick-slide
+		visibility: hidden
+
+	.slick-vertical .slick-slide
+		display: block
+		height: auto
+		border: 1px solid transparent
+
+	.slick-arrow.slick-hidden
+		display: none
