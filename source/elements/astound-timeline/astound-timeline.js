@@ -70,7 +70,7 @@ var initAstoundTimeline = function($wrap, years, dataElements) {
         autoplay: true,
         fade: false,
         autoplaySpeed: 5000,
-        // asNavFor: '#'+slider_id,
+        asNavFor: $yearsBlock,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true
