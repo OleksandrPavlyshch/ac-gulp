@@ -88,22 +88,48 @@
 		+max-screen($mobile)
 			font-size: 25px !important
 
-.previous-project
-	text-align: left !important
+// .previous-project
+// 	text-align: left !important
 
 .container-wrap .bottom_controls .next-project h3, .container-wrap[data-nav-pos="after_project_2"] .bottom_controls 
 	.next-project span
-		text-align: right !important
+		+min-screen(690)
+			text-align: right !important
 		&.line
 			@extend .svg-icon-arrow_right
+		html[lang="de-DE"] &:first-child
+			&:before
+				right: 0
+				content: "Nächstes Projekt"
 	.previous-project span
-		text-align: left !important
+		+min-screen(690)
+			text-align: left !important
 		&.line
 			@extend .svg-icon-arrow_left
+		html[lang="de-DE"] &:first-child
+			&:before
+				content: "Vorheriges Projekt"
+				left: 0
 	.previous-project,
 	.next-project
+		h3
+			max-width: 100%
+			+max-screen(690)
+				width: 100%
+			> span:first-child
+				html[lang="de-DE"] &
+					font-size: 0
+				&:before
+					min-width: 240px
+					position: absolute
+					text-indent: 0
+					white-space: nowrap
+					top: 0
+					width: 100%
+					font-size: 25px
 		span
 			&:not(.text)
+				// overflow: hidden
 				font-size: 25px
 				font-weight: 700
 				margin-bottom: 20px
