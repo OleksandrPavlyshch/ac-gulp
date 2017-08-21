@@ -2,7 +2,6 @@
 
 var initAstoundTimeline = function($wrap, years, dataElements) {
     var $astoundTimeline = jQuery($wrap);
-            console.log($astoundTimeline);
 
     if (!$astoundTimeline.hasClass('astound_timeline')) { $astoundTimeline.addClass('astound_timeline');
     }
