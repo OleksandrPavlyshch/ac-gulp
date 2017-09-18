@@ -1,0 +1,56 @@
+.astound-dropdown_button
+	display: inline-block
+	position: relative
+	top: -3px
+	min-height: 42px
+	margin-bottom: 10px
+	text-align: center
+	line-height: 20px
+	font-weight: 500
+	font-size: 14px
+	vertical-align: top
+	transition: all .45s cubic-bezier(0.25,1,0.33,1);
+	&_arrow
+		position: absolute
+		right: 15px
+		top: 5px
+		transition: all .45s cubic-bezier(0.25,1,0.33,1);
+	&:hover &_arrow
+		transform: rotateX(180deg);
+	&_title
+		cursor: default
+	&_title,
+	&_link
+		border: 2px solid rgba(0,0,0,0.75)
+		background-color: transparent
+		padding: 9px 42px
+		display: block
+		color: #000
+		transition: color .45s cubic-bezier(0.25,1,0.33,1), background-color .45s cubic-bezier(0.25,1,0.33,1), height .45s cubic-bezier(0.25,1,0.33,1), padding .45s cubic-bezier(0.25,1,0.33,1);
+	&_link
+		cursor: pointer
+		height: 0
+		overflow: hidden
+		padding: 0
+		border: none
+		&:hover
+			color: $white
+			background-color: $astound-blue
+		& + &
+			border-top: none !important
+	&:hover &_link
+		height: auto
+		padding: 9px 42px
+		border: 2px solid rgba(0,0,0,0.75)
+	&_drop
+		position: absolute
+		top: 42px
+		left: 0
+		width: 100%
+		overflow: hidden
+		transition: transform .45s cubic-bezier(0.25,1,0.33,1), opacity .45s cubic-bezier(0.25,1,0.33,1);
+		max-height: 0
+	&:hover &_drop
+		max-height: none
+
+
